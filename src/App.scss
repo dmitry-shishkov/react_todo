@@ -1,0 +1,87 @@
+body {
+  background-color: rgb(247, 247, 247);
+}
+
+.App {
+  margin: 30px auto;
+  width: 400px;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 4px 4px 35px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 35px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 35px 0px rgba(34, 60, 80, 0.2);
+  overflow: hidden;
+
+  .title {
+    padding: 15px 20px;
+    text-align: left;
+    color: #fff;
+    font-weight: bold;
+    background-color: #6495ed;
+  }
+
+  .todoForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+
+    input {
+      width: 100%;
+      min-height: 20px;
+      padding: 14px;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      outline: none;
+
+      img {
+        width: 25px;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .strike {
+    text-decoration: line-through;
+  }
+
+  .itemTodo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 8px 14px 14px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+
+    .itemText {
+      display: inline-block;
+      padding-right: 10px;
+      font-size: 15px;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .itemDelete {
+      display: inline-block;
+      cursor: pointer;
+
+      img {
+        width: 20px;
+        opacity: 0.5;
+      }
+    }
+  }
+}
